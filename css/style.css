@@ -43,6 +43,11 @@ a{
 
 /*MENU*/
 
+.navbar-toggler{
+    display: flex;
+    justify-content: right;
+}
+
 li {
     padding: 10px;
     display: inline-block;
@@ -50,13 +55,18 @@ li {
     font-size: 19px;
     border-radius: 5px;
     border-bottom: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
   }
 
 .menu{
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
+    margin-bottom: 20px;
+    gap: 5px;
 }
+
 
 .menu li {
     margin-left: 4px; 
@@ -67,7 +77,8 @@ li {
 }
 
 .menuPresionado{
-color: rgb(252, 89, 49);
+font-weight: bold;
+color: #fc5931;
 }
 
 
@@ -76,6 +87,7 @@ color: rgb(252, 89, 49);
 h2{
     margin: 20px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -103,6 +115,7 @@ color: #121212;
 text-align: center;
 padding: 0PX 10PX;
 margin-top: 10px;
+font-weight: bold;
 }
 
 
@@ -219,7 +232,6 @@ hr{
 footer{
     background-color: #121212;
     padding-bottom: 30px;
-
 }
 
 .dentrodelFooter{
@@ -270,6 +282,7 @@ p{
     color: rgb(255, 255, 255);
     font-size: 40px;
     text-transform:none;
+    font-weight: bold;
 }
 
 .imagenFondocontacto{
@@ -306,6 +319,7 @@ p{
     color: #121212;
     font-size: 35px;
     text-align: center;
+    font-weight: bold;
 }
 
 form {
@@ -320,7 +334,9 @@ form {
 .rellenarTexto {
     display: flex;
     flex-direction: column;     
-    width: 100%;}
+    width: 100%;
+
+}
 
 label {
     font-size: 16px;
@@ -797,3 +813,96 @@ text-transform: uppercase;
     background-color: #ea8800;
     border-color: #d77e01;
 }
+
+/*VISTA CELULAR*/
+
+@media (max-width: 320px) {
+    li {
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .dentrodelFooter {
+        margin-bottom: 20px;
+        gap: 10px;
+        margin-right: 40px;
+
+    }
+
+    .botonInscribirse{
+        margin-bottom: 60px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .videos{
+        margin: 10px;               
+        border-radius: 15px;
+    }
+    
+    .flechasborrar{
+        display: none
+    }
+
+    .textoInicio{
+        font-size: 14px;
+    }
+
+    .primerSubtitulo{
+        font-size: 28px;
+    }
+
+    iframe{
+        width: 198px;
+    }
+
+    .muestrarioVideos{
+        gap: 500px;
+    }
+
+    .tituloContacto{
+        padding: 20px;
+        padding-top: 220px;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    
+    .contactanosTitulo{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .rellenarTexto:nth-child(1), .rellenarTexto:nth-child(2) {
+        width: 100%;                  
+    }
+    
+    .rellenarTexto:nth-child(3), .rellenarTexto:nth-child(4) {
+        width: 100%;                  
+    }
+    
+    .rellenarTexto:nth-child(5) {
+        width: 100%;                 
+    }
+
+    .infoContacto{
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        padding: 15px 10px;            
+        font-size: 18px;                
+        border-radius: 10px;
+        width: 120px;                  
+        display: block;                           
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+  }
+
