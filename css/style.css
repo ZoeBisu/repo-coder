@@ -91,6 +91,7 @@ h2{
 }
 
 
+
 /*TITULOS Y SUBTITULOS INICIO*/
 
 .primerSubtitulo{
@@ -820,7 +821,7 @@ text-transform: uppercase;
 
 /*VISTA CELULAR*/
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     li {
         padding: 5px;
         text-align: center;
@@ -905,8 +906,17 @@ text-transform: uppercase;
         display: block;                           
     }
 
+    h3{
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    
     p{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
         margin-bottom: 0;
     }
+
   }
 
