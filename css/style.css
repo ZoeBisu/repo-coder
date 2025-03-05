@@ -941,6 +941,13 @@ text-transform: uppercase;
         margin-bottom: 0;
     }
   
+    .carousel-container {
+        background-color: #ff4800; 
+        padding: 20px;
+        border-radius: 30px;
+        margin: 15px;
+    }
+
 }
 
 
