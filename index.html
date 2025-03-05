@@ -90,64 +90,61 @@
 <!-- MUESTRARIO VIDEOS -->
 
     <hr>
-    <h2 class="segundoSubtitulo">Agunas de nuestras rutinas</h2>
+    <h2 class="segundoSubtitulo">Algunas de nuestras rutinas</h2>
 
-<section class="muestrarioVideos">
-    <img src="./img/flecha_izquierda.png" alt="facebook" width="35" height="35" class="flechasborrar">
-    <iframe width="260" class="videos"
-        src="https://www.youtube.com/embed/6XMxf1E5c7Q" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <div class="container mt-4">
+        <div class="carousel-container">
+            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe src="https://www.youtube.com/embed/6XMxf1E5c7Q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed/e79qfCh2aOc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed/2c1nkpp8gaQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed/iIzx_BSYuvw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
     
-    <iframe width="260" class="videos"
-        src="https://www.youtube.com/embed/e79qfCh2aOc" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-    
-    <iframe width="260" class="videos"
-        src="https://www.youtube.com/embed/2c1nkpp8gaQ" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-    <iframe width="260" class="videos"
-        src="https://www.youtube.com/embed/iIzx_BSYuvw" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-    <img src="./img/flecha_derecha.png" alt="facebook" width="35" height="35" class="flechasborrar">
-</section>
-
+                <!-- Botones de navegación -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+         
+   
    </main>
    <hr>
 
 <!-- FOOTER -->
    <footer>
     <div class="tituloFooter">
-        <h2>Olympus Gym</h2>
+        <h2 class="tituloFooter">Olympus Gym</h2>
     </div>
 <div class="dentrodelFooter">
     <div class="gruposFooter">
-        <h3>Empresa</h3>
-        <p>Términos y Condiciones</p>
-        <P>Politica de Privacidad</P>
-        <P>Podcast</P>
-        <p>Contacto</p>
+        <h3 class="titulosGrupos">Empresa</h3>
+        <p class="textoFooter">Términos y Condiciones</p>
+        <P class="textoFooter">Politica de Privacidad</P>
+        <P class="textoFooter">Podcast</P>
+        <p class="textoFooter">Contacto</p>
     </div>
     <div class="gruposFooter">
-        <h3>Planes</h3>
-        <p>Black</p>
-        <P>Fit</P>
-        <P>Smart</P>
+        <h3 class="titulosGrupos">Planes</h3>
+        <p class="textoFooter">Black</p>
+        <P class="textoFooter">Fit</P>
+        <P class="textoFooter">Smart</P>
     </div>
 </div>
 

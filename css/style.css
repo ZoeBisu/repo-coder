@@ -26,19 +26,31 @@ a{
 
 /*MUESTRARIO VIDEOS PAGINA INICIO*/
 
-.muestrarioVideos{
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;        
-    gap: 20px;                      
+ .carousel-container {
+    background-color: #ff4800; 
     padding: 20px;
-    background-color: #d57346e7;
     border-radius: 30px;
 }
 
-.videos{
-    border-radius: 10px;    
+
+
+/* Videos dentro del carrusel */
+.carousel-item iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 30px; 
+}
+
+/* Flechas de navegación en negro */
+.carousel-control-prev, .carousel-control-next {
+    width: 60px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
 }
 
 /*MENU*/
@@ -79,6 +91,8 @@ li {
 .menuPresionado{
 font-weight: bold;
 color: #fc5931;
+padding-bottom: 12px;
+padding-top: 12px;
 }
 
 
@@ -106,6 +120,7 @@ h2{
     font-size: 28px;
     text-align: center;
     text-transform: none;
+    font-weight: bold !important;
 }
 
 
@@ -188,7 +203,7 @@ h1{
     color: rgb(255, 255, 255);
     font-size: 40px;
     text-transform: uppercase;
-
+    font-weight: bold !important;
 }
 
 .textoInicio{
@@ -249,8 +264,18 @@ footer{
 .tituloFooter{
     text-align: center;
     padding: 5px;
+    font-size: 25px !important;
 }
 
+.titulosGrupos{
+    font-size: 19px !important;
+    font-weight: bold;
+}
+
+.textoFooter {
+    margin-bottom: 2px !important; /* Fuerza un margen inferior más pequeño */
+    line-height: 1.1 !important; /* Reduce el espacio entre líneas */
+}
 
 .redes{
     text-align: center;
@@ -917,6 +942,5 @@ text-transform: uppercase;
         padding-bottom: 2px;
         margin-bottom: 0;
     }
-
-  }
-
+  
+}
