@@ -11,35 +11,31 @@
     transform: translateX(-50%);
 }
 
-.imagenFondoinscribirse{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 
 
 /*tabla planes*/
 
-.planes{
+.planes {
     font-weight: normal;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Habilita scroll horizontal */
+    -webkit-overflow-scrolling: touch; 
 }
 
 table {
     width: 100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     color: #121212;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto;
+    white-space: nowrap;
 }
 
-thead{
-    font-size: 25px;
+thead {
+    font-size: 20px;
 }
 
 th, td {
@@ -48,23 +44,17 @@ th, td {
     border: 1px solid #ddd;
 }
 
-table tbody tr td:nth-child(2), 
-table thead th:nth-child(2) {
-    border: #6a6a6a55;
-}
-
-.columnasIzquierda{
+.columnasIzquierda {
     text-align: left;
 }
 
-.filaFidelidad{
- font-size: 13px;
- color: #000000af;
- border: none; 
- 
+.filaFidelidad {
+    font-size: 13px;
+    color: #000000af;
+    border: none;
 }
 
-.precioPlan{
+.precioPlan {
     margin: 0;
 }
 

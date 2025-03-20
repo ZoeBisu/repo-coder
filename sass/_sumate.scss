@@ -1,0 +1,19 @@
+
+
+/*AGREGAR UN ARCHIVO*/
+
+.archivo-input {
+    display: inline-block;
+    background-color: #ffb349;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 2px solid #ff9a0e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.archivo-input:hover {
+    background-color: #ea8800;
+    border-color: #d77e01;
+}

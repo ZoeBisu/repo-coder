@@ -33,15 +33,7 @@ $primary-color: #fb6f2de7;
     font-weight: bold;
 }
 
-.imagenFondocontacto{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
-    position: relative;
-    @include width(100%);
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 
 /*Contenedor*/
@@ -122,12 +114,12 @@ input[type="submit"] {
     color: rgb(0, 0, 0);
     border: none;
     font-weight: bold;
-    border-radius: 5px;
+    @include border-radius(5px);
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;     
     margin-bottom: 20px;        
-    width: 200px;                  
+    @include width(200px);                  
     display: block;                
     margin-left: auto;             
     margin-right: auto;             

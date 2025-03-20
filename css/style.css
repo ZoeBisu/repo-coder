@@ -128,16 +128,6 @@ li {
   font-weight: bold;
 }
 
-.imagenFondocontacto {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*Contenedor*/
 .contenedorContactoprimero {
   background-color: rgba(251, 111, 45, 0.9058823529);
@@ -309,6 +299,25 @@ hr {
   margin: 20px 0;
 }
 
+/*TITULO INSCRIBIRSE*/
+.tituloInscribirse {
+  color: #121212;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.planPerfecto {
+  color: #f16727;
+}
+
+/*TITULO PRINCIPAL RUTINAS*/
+.TituloRutinas {
+  color: #121212;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
 /*menu*/
 .menu a:hover {
   color: #ff3f14;
@@ -410,42 +419,33 @@ p {
   transform: translateX(-50%);
 }
 
-.imagenFondoinscribirse {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*tabla planes*/
 .planes {
   font-weight: normal;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Habilita scroll horizontal */
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   color: #121212;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
+  white-space: nowrap;
 }
 
 thead {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 th, td {
   padding: 8px;
   text-align: center;
   border: 1px solid #ddd;
-}
-
-table tbody tr td:nth-child(2),
-table thead th:nth-child(2) {
-  border: rgba(106, 106, 106, 0.3333333333);
 }
 
 .columnasIzquierda {
@@ -639,14 +639,21 @@ table thead th:nth-child(2) {
   padding: 10px;
 }
 
-.imagenFondorutina {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mano-enfoque-selectivo-joven-mujer-sexy-ropa-deportiva-reloj-inteligente-pie-cinta-hacer-ejercicio-gimnasio-moderno-espacio-copia_1150-46967.jpg?t=st=1738774604~exp=1738778204~hmac=b9dab9f350956efeb780095a9499e9da1ff4d050a3ca592363d32a18d28f9769&w=740");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*TITULO Y SUBTITULO TIENDA*/
+.tituloTienda {
+  color: #121212;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.subtituloTienda {
+  color: #121212;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 5px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .fueraAcordeon {
@@ -693,27 +700,33 @@ table thead th:nth-child(2) {
 }
 
 .separator {
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-left: 2px solid #000;
-  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
+  margin-top: 5px;
+  font-weight: normal;
+  margin-right: 550px;
 }
 
 .separarSeries {
-  margin-right: 80px;
+  margin-right: 0;
 }
 
 .box {
   display: block;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #eeeeee;
-  margin: 1px 0;
+  margin: 5px 0;
   width: 100%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.171);
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.9176470588);
+  word-wrap: break-word;
+  white-space: normal;
+  font-weight: bold;
 }
 
 input[type=checkbox] {
@@ -721,7 +734,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked + .contenido {
-  max-height: 200px;
+  max-height: none;
   padding: 10px;
 }
 
@@ -744,59 +757,60 @@ input[type=checkbox]:checked + .contenido {
   background-color: #bb4200;
 }
 
-/*INICIO*/
-.imagenFondo {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
+.imagenesParaFondos, .imagenFondoStaff, .imagenFondoinscribirse, .imagenFondocontacto, .imagenFondorutina, .imagenFondotienda, .imagenFondo {
   position: relative;
   width: 100%;
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/*INICIO*/
+.imagenFondo {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
 }
 
 /*TIENDA*/
 .imagenFondotienda {
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?t=st=1738802392~exp=1738805992~hmac=61ac5fcb96bbc7491612e6e0c2de170e803f83bfb1c3f23ad42e71597fb34d4d&w=740");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*MI RUTINA*/
 .imagenFondorutina {
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mano-enfoque-selectivo-joven-mujer-sexy-ropa-deportiva-reloj-inteligente-pie-cinta-hacer-ejercicio-gimnasio-moderno-espacio-copia_1150-46967.jpg?t=st=1738774604~exp=1738778204~hmac=b9dab9f350956efeb780095a9499e9da1ff4d050a3ca592363d32a18d28f9769&w=740");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*CONTACTO*/
 .imagenFondocontacto {
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*INCRIBIRSE*/
 .imagenFondoinscribirse {
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+/*SUMATE AL STAFF*/
+.imagenFondoStaff {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/jovenes-deportistas-entrenando-gimnasio-matutino_1157-28953.jpg?t=st=1738809923~exp=1738813523~hmac=61b240140c4100a670b9b26824c3f4dc034ea2ffc58454b9f1eaa1f5e702c38f&w=740");
+}
+
+/*AGREGAR UN ARCHIVO*/
+.archivo-input {
+  display: inline-block;
+  background-color: #ffb349;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: 2px solid #ff9a0e;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.archivo-input:hover {
+  background-color: #ea8800;
+  border-color: #d77e01;
 }
 
 @media (max-width: 350px) {
@@ -918,6 +932,79 @@ input[type=checkbox]:checked + .contenido {
   .carousel-control-next {
     right: -80px;
   }
+  .flecha {
+    width: 40px;
+    height: 40px;
+  }
+  .flecha-izquierda {
+    left: -5px;
+  }
+  .flecha-derecha {
+    right: -10px;
+  }
+  .recuadroTienda {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .recuadroTienda img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+  }
+  .recuadroTienda:nth-child(-n+3) {
+    display: none;
+  }
+  .contenedor-cardsTienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    padding: 0px 40px;
+  }
+  .cardTienda {
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .separator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: normal;
+    margin-right: 15px;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 6px;
+  }
+  td img {
+    max-width: 25px;
+    height: auto;
+  }
 }
 * {
   margin: 0;
@@ -928,6 +1015,7 @@ input[type=checkbox]:checked + .contenido {
 body {
   background-color: #eeeeee;
   font-family: "Montserrat", serif;
+  overflow-x: hidden;
 }
 
 .principioPagina {

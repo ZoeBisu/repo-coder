@@ -149,5 +149,94 @@
       .carousel-control-next {
         right: -80px; 
       }
+      
+
+      
+.flecha {
+    width: 40px;
+    height: 40px;
 }
 
+.flecha-izquierda{
+    left: -5px;
+}
+
+.flecha-derecha {
+    right: -10px;
+}
+
+
+.recuadroTienda {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.recuadroTienda img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+}
+.recuadroTienda:nth-child(-n+3) {
+    display: none;
+}
+
+
+.contenedor-cardsTienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    padding: 0px 40px;
+}
+
+
+.cardTienda {
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.separator {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;  
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    font-size: 14px;
+}
+
+th, td {
+    padding: 6px;
+}
+
+td img {
+    max-width: 25px; 
+    height: auto;
+}
+}

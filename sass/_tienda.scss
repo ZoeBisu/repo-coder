@@ -114,7 +114,6 @@
 
 
 
-
 /*CARDS PRODUCTOS GENERALES*/
 
 .contenedor-cardsTienda {
@@ -168,3 +167,22 @@
     text-align: center;
     padding: 10px;
 }
+
+/*TITULO Y SUBTITULO TIENDA*/
+
+.tituloTienda{
+    color: #121212;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    }
+    
+.subtituloTienda{
+    color: #121212;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    }
+    
