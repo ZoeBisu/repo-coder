@@ -1,0 +1,170 @@
+
+
+
+
+.imagenFondotienda{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?t=st=1738802392~exp=1738805992~hmac=61ac5fcb96bbc7491612e6e0c2de170e803f83bfb1c3f23ad42e71597fb34d4d&w=740");
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Flechas de navegación en negro */
+.carousel-control-prev, .carousel-control-next {
+    width: 60px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*CARDS PRODCUTOS INDIVIDUALES*/
+
+.contenedorTienda-principal {
+    position: relative;
+    width: 90%;
+    overflow: visible;
+    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+}
+
+.contenedorTienda {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 60px;
+    margin-left: 40px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.recuadroTienda {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.recuadroTienda img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+}
+
+.recuadroTienda:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.descripcionProductos {
+    font-size: 13px;
+    margin: 18px 0;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.precioProductos {
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.flecha img {
+    width: 100%;
+    height: auto;
+}
+
+.flecha-izquierda{
+    left: -40px;
+}
+
+.flecha-derecha {
+    right: -50px;
+}
+
+
+
+
+/*CARDS PRODUCTOS GENERALES*/
+
+.contenedor-cardsTienda {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    padding: 0px 40px;
+}
+
+.cardTienda {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.cardTienda:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardTienda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar la legibilidad */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}

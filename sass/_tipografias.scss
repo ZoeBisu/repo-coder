@@ -1,0 +1,107 @@
+$primary-color: aliceblue;
+$secondary-color: #ff3f14;
+$tertiary-color:  #121212;
+
+@mixin margin($margin){
+    margin: $margin;
+}
+
+@mixin font-size($font){
+    font-size: $font;
+}
+
+
+.fontcolor{
+    color: $primary-color;
+}
+
+/*Titulo inicio*/
+
+.primerSubtitulo{
+    color: $secondary-color;
+}
+
+/*ALGUNOS SUBTITULOS*/
+
+h2{
+    @include margin(20px);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*TITULOS Y SUBTITULOS INICIO*/
+
+.primerSubtitulo{
+    padding-top: 60px;
+    @include font-size(33px);
+    text-align: center;
+}
+
+.segundoSubtitulo{
+    color: $tertiary-color;
+    @include font-size(28px);
+    text-align: center;
+    text-transform: none;
+    font-weight: bold !important;
+}
+
+/*H4 QUE SE UTILIZA SOLAMENTE EN CARDS DEL INICIO*/
+
+h4{
+    color: $tertiary-color;
+    text-align: center;
+    padding: 0PX 10PX;
+    margin-top: 10px;
+    font-weight: bold;
+    }
+
+
+/*cards inicio*/
+
+.tituloCards{
+    @include font-size(19px);
+}
+
+
+.textoCards{
+    color: $tertiary-color;
+    text-align: center;
+    @include font-size(14px);
+    padding: 8PX 20px;
+    margin-bottom: 10px;
+}
+
+/*ALGUNOS SUBTITULOS*/
+
+h2{
+    @include margin(20px);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*TEXTO IMAGEN DE FONDO INICIO*/
+
+h1{
+    padding: 20px;
+    padding-top: 100px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    @include font-size(40px);
+    text-transform: uppercase;
+    font-weight: bold !important;
+}
+
+.textoInicio{
+    text-align: center;
+}
+
+
+/*TAMAÑO DEL HR QUE SE USA EN TODAS LAS PAG*/
+
+hr{
+    border: 0; 
+    @include margin(20px 0); 
+}

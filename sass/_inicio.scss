@@ -1,0 +1,159 @@
+$primary-color: #ff3f14;
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+@mixin padding($padding){
+    padding: $padding;
+}
+
+@mixin width($width){
+    width: $width;
+}
+
+@mixin height($height){
+    height: $height;
+}
+
+@mixin gap($gap){
+    gap: $gap;
+}
+
+@mixin font-size($font){
+    font-size: $font;
+}
+
+
+
+/*contenedor videos*/
+
+.carousel-container {
+    background-color: $primary-color; 
+    @include border-radius(30px);
+    @include padding(20px);
+}
+
+.carousel-item iframe {
+    @include border-radius(30px);
+    @include width(100%);
+    @include height(250px);
+}
+
+/*cards inicio*/
+
+.cardContenido{
+    @include border-radius(10px);
+}
+
+
+
+li{
+    @include border-radius(5px);
+}
+
+/*CARDS INICIO*/
+
+.cardsInicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include gap(10px);
+    @include padding(20px);
+}
+
+
+.cardContenido{
+    @include width(250px);
+    border: 1px solid #cccccc8b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cardImagen{
+    @include width(100%);
+    @include height(150px);
+    object-fit: cover;
+}
+
+
+
+/*MUESTRARIO VIDEOS PAGINA INICIO*/
+
+.carousel-container {
+    background-color: #ff4800; 
+    @include padding(20px);
+    border-radius: 30px;
+    margin: 50px;
+}
+
+
+.carousel-item iframe {
+    @include width(100%);
+    @include height(250px);
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev {
+  left: -90px; 
+}
+
+.carousel-control-next {
+  right: -90px; 
+}
+
+/*FONDO IMAGEN DEL INICIO*/
+
+.imagenGimnasio{
+    @include width(100%);
+    height: auto; 
+    display: block;
+    @include height(500px);
+  }
+  
+  .imagenFondo{
+      background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
+      position: relative;
+      @include width(100%);
+      min-height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+
+/*BOTON IMAGEN DE FONDO INICIO*/
+
+.posicionBoton{
+    padding-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.botonInscribirse{
+    @include font-size(18px);
+    display: inline-block;
+    @include padding(12px 24px);
+    background-color: $primary-color; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.botonInscribirse:hover {
+    background-color: #f61818;
+}
+

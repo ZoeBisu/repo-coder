@@ -1,953 +1,942 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+/*contenedor videos*/
+.carousel-container {
+  background-color: #ff3f14;
+  border-radius: 30px;
+  padding: 20px;
 }
 
-/*SE UTILIZA EN TODAS LAS PAG AL INICIO*/
-body{
-    background-color: #eeeeee;
-    font-family: "Montserrat", serif;
-}
-
-.principioPagina{
-    background-color: #000000;
-}
-
-.fontcolor{
-    color: aliceblue;
-}
-
-a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-
-/*MUESTRARIO VIDEOS PAGINA INICIO*/
-
- .carousel-container {
-    background-color: #ff4800; 
-    padding: 20px;
-    border-radius: 30px;
-}
-
-
-
-/* Videos dentro del carrusel */
 .carousel-item iframe {
-    width: 100%;
-    height: 250px;
-    border-radius: 30px; 
+  border-radius: 30px;
+  width: 100%;
+  height: 250px;
 }
 
-/* Flechas de navegación en negro */
-.carousel-control-prev, .carousel-control-next {
-    width: 60px; 
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%);
-    width: 50px;
-    height: 50px;
-}
-
-/*MENU*/
-
-.navbar-toggler{
-    display: flex;
-    justify-content: right;
+/*cards inicio*/
+.cardContenido {
+  border-radius: 10px;
 }
 
 li {
-    padding: 5px;
-    display: inline-block;
-    text-align: center;
-    font-size: 19px;
-    border-radius: 5px;
-    border-bottom: 3px solid #ffffff;
-    display: flex;
-    align-items: center;
-  }
-
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
+  border-radius: 5px;
 }
-
-
-.menu li {
-    margin-left: 4px; 
-}
-
-.menu a:hover {
-    color: rgb(252, 89, 49);
-}
-
-.menuPresionado{
-font-weight: bold;
-color: #fc5931;
-padding-bottom: 12px !important;
-padding-top: 12px !important;
-}
-
-
-/*ALGUNOS SUBTITULOS*/
-
-h2{
-    margin: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-
-
-/*TITULOS Y SUBTITULOS INICIO*/
-
-.primerSubtitulo{
-    padding-top: 60px;
-    color: #ff3f14;
-    font-size: 33px;
-    text-align: center;
-}
-
-.segundoSubtitulo{
-    color: #121212;
-    font-size: 28px;
-    text-align: center;
-    text-transform: none;
-    font-weight: bold !important;
-}
-
-
-/*H4 QUE SE UTILIZA SOLAMENTE EN CARDS DEL INICIO*/
-
-h4{
-color: #121212;
-text-align: center;
-padding: 0PX 10PX;
-margin-top: 10px;
-font-weight: bold;
-}
-
-
 
 /*CARDS INICIO*/
-
-.cardsInicio{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 20px;
+.cardsInicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
 }
 
-.tituloCards{
-    font-size: 19px;
+.cardContenido {
+  width: 250px;
+  border: 1px solid rgba(204, 204, 204, 0.5450980392);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.cardContenido{
-    width: 250px;
-    border: 1px solid #cccccc8b;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.cardImagen {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
-.cardImagen{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+/*MUESTRARIO VIDEOS PAGINA INICIO*/
+.carousel-container {
+  background-color: #ff4800;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 50px;
 }
 
-.textoCards{
-    color: #121212;
-    text-align: center;
-    font-size: 14px;
-    padding: 8PX 20px;
-    margin-bottom: 10px;
+.carousel-item iframe {
+  width: 100%;
+  height: 250px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev {
+  left: -90px;
+}
+
+.carousel-control-next {
+  right: -90px;
+}
 
 /*FONDO IMAGEN DEL INICIO*/
-
-.imagenGimnasio{
+.imagenGimnasio {
   width: 100%;
-  height: auto; 
+  height: auto;
   display: block;
   height: 500px;
 }
 
-.imagenFondo{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.imagenFondo {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
-/*TEXTO IMAGEN DE FONDO INICIO*/
-
-h1{
-    padding: 20px;
-    padding-top: 100px;
-    margin-top: 40px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold !important;
-}
-
-.textoInicio{
-    text-align: center;
-}
-
 
 /*BOTON IMAGEN DE FONDO INICIO*/
-
-.posicionBoton{
-    padding-top: 20px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+.posicionBoton {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.botonInscribirse{
-    font-size: 18px;
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #ff4800; 
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 10px;
-    transition: background 0.3s ease;
+.botonInscribirse {
+  font-size: 18px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff3f14;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
 .botonInscribirse:hover {
-    background-color: #f61818;
-}
-
-
-
-/*TAMAÑO DEL HR QUE SE USA EN TODAS LAS PAG*/
-
-hr{
-    border: 0; 
-    margin: 20px 0; 
-}
-
-
-/*FOOTER DE TODAS LAS PAG*/
-
-footer{
-    background-color: #121212;
-    padding-bottom: 30px;
-}
-
-.dentrodelFooter{
-    display: flex;                   
-    margin-bottom: 20px;  
-    gap: 90px;
-}
-
-
-.tituloFooter{
-    text-align: center;
-    padding: 5px;
-    font-size: 25px !important;
-}
-
-.titulosGrupos{
-    font-size: 19px !important;
-    font-weight: bold;
-}
-
-.textoFooter {
-    margin-bottom: 2px !important; /* Fuerza un margen inferior más pequeño */
-    line-height: 1.1 !important; /* Reduce el espacio entre líneas */
-}
-
-.redes{
-    text-align: center;
-}
-
-.siguenosEnredes{
-    margin-bottom: 10px;
-}
-
-.imagenesRedes{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-h3{
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
-
-p{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 2px;
+  background-color: #f61818;
 }
 
 /*Página contacto*/
-
-.tituloContacto{
-    padding: 20px;
-    padding-top: 300px;
-    margin-top: 40px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-transform:none;
-    font-weight: bold;
+.tituloContacto {
+  padding: 20px;
+  padding-top: 300px;
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-transform: none;
+  font-weight: bold;
 }
 
-.imagenFondocontacto{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.imagenFondocontacto {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /*Contenedor*/
-
-.contenedorContactoprimero{
- background-color: #fb6f2de7;
- padding: 20px;
- border-radius: 30px;
- margin: 30px;
- margin-bottom: 100px;
- margin-top: 100px;
+.contenedorContactoprimero {
+  background-color: rgba(251, 111, 45, 0.9058823529);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 30px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
-.contenedorContacto{
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 30px;
+.contenedorContacto {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 /*Interior contenedor*/
-
-.contactanosTitulo{
-    color: #121212;
-    font-size: 35px;
-    text-align: center;
-    font-weight: bold;
+.contactanosTitulo {
+  color: #121212;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
 }
 
 form {
-    display: flex;
-    flex-wrap: wrap;             
-    gap: 20px;         
-    margin-top: 30px;           
-    margin-left: 15px;
-    margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .rellenarTexto {
-    display: flex;
-    flex-direction: column;     
-    width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
-    display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
 }
 
 input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .rellenarTexto:nth-child(1), .rellenarTexto:nth-child(2) {
-    width: 48%;                  
+  width: 48px;
 }
 
 .rellenarTexto:nth-child(3), .rellenarTexto:nth-child(4) {
-    width: 48%;                  
+  width: 48%;
 }
 
 .rellenarTexto:nth-child(5) {
-    width: 100%;                 
+  width: 100%;
 }
 
 /*Boton Contacto*/
-
-input[type="submit"] {
-    padding: 15px 30px;            
-    font-size: 18px;                
-    background-color: #ff854d;
-    color: rgb(0, 0, 0);
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;     
-    margin-bottom: 20px;        
-    width: 200px;                  
-    display: block;                
-    margin-left: auto;             
-    margin-right: auto;             
+input[type=submit] {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: rgba(251, 111, 45, 0.9058823529);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-input[type="submit"]:hover {
-    background-color: #f16727;   
+input[type=submit]:hover {
+  background-color: #f16727;
 }
 
+.fontcolor {
+  color: aliceblue;
+}
+
+/*Titulo inicio*/
+.primerSubtitulo {
+  color: #ff3f14;
+}
+
+/*ALGUNOS SUBTITULOS*/
+h2 {
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*TITULOS Y SUBTITULOS INICIO*/
+.primerSubtitulo {
+  padding-top: 60px;
+  font-size: 33px;
+  text-align: center;
+}
+
+.segundoSubtitulo {
+  color: #121212;
+  font-size: 28px;
+  text-align: center;
+  text-transform: none;
+  font-weight: bold !important;
+}
+
+/*H4 QUE SE UTILIZA SOLAMENTE EN CARDS DEL INICIO*/
+h4 {
+  color: #121212;
+  text-align: center;
+  padding: 0PX 10PX;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/*cards inicio*/
+.tituloCards {
+  font-size: 19px;
+}
+
+.textoCards {
+  color: #121212;
+  text-align: center;
+  font-size: 14px;
+  padding: 8PX 20px;
+  margin-bottom: 10px;
+}
+
+/*ALGUNOS SUBTITULOS*/
+h2 {
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*TEXTO IMAGEN DE FONDO INICIO*/
+h1 {
+  padding: 20px;
+  padding-top: 100px;
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+
+.textoInicio {
+  text-align: center;
+}
+
+/*TAMAÑO DEL HR QUE SE USA EN TODAS LAS PAG*/
+hr {
+  border: 0;
+  margin: 20px 0;
+}
+
+/*menu*/
+.menu a:hover {
+  color: #ff3f14;
+}
+
+.menuPresionado {
+  color: #ff3f14;
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: right;
+}
+
+li {
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 19px;
+  border-bottom: 3px solid #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.menu li {
+  margin-left: 4px;
+}
+
+.menuPresionado {
+  font-weight: bold;
+  padding-bottom: 12px !important;
+  padding-top: 12px !important;
+}
+
+/*FOOTER DE TODAS LAS PAG*/
+footer {
+  background-color: #121212;
+  padding-bottom: 30px;
+}
+
+.dentrodelFooter {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 90px;
+}
+
+.tituloFooter {
+  text-align: center;
+  padding: 5px;
+  font-size: 25px !important;
+}
+
+.titulosGrupos {
+  font-size: 19px !important;
+  font-weight: bold;
+}
+
+.textoFooter {
+  margin-bottom: 2px !important; /* Fuerza un margen inferior más pequeño */
+  line-height: 1.1 !important; /* Reduce el espacio entre líneas */
+}
+
+.redes {
+  text-align: center;
+}
+
+.siguenosEnredes {
+  margin-bottom: 10px;
+}
+
+.imagenesRedes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+}
 
 /*Inscribirse*/
-
-.flechaAbajo{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+.flechaAbajo {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.imagenFondoinscribirse{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*TITULO INSCRIBIRSE*/
-
-.tituloInscribirse{
-    color: #121212;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.planPerfecto{
-    color: #f16727;
+.imagenFondoinscribirse {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*tabla planes*/
-
-.planes{
-    font-weight: normal;
+.planes {
+  font-weight: normal;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse; 
-    color: #121212;
-    margin-left: 20px;
-    margin-right: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  color: #121212;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-thead{
-    font-size: 25px;
+thead {
+  font-size: 25px;
 }
 
 th, td {
-    padding: 8px;
-    text-align: center;
-    border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
-table tbody tr td:nth-child(2), 
+table tbody tr td:nth-child(2),
 table thead th:nth-child(2) {
-    border: #6a6a6a55;
+  border: rgba(106, 106, 106, 0.3333333333);
 }
 
-.columnasIzquierda{
-    text-align: left;
+.columnasIzquierda {
+  text-align: left;
 }
 
-.filaFidelidad{
- font-size: 13px;
- color: #000000af;
- border: none; 
- 
+.filaFidelidad {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6862745098);
+  border: none;
 }
 
-.precioPlan{
-    margin: 0;
+.precioPlan {
+  margin: 0;
 }
-
-
 
 /*BOTON INSCRIBIRSE AHORA*/
-
-.botonInscribirseahora{
-    font-size: 19px;
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #ff6c31; 
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 10px;
-    transition: background 0.3s ease;
+.botonInscribirseahora {
+  font-size: 19px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff6c31;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
 .botonInscribirseahora:hover {
-    background-color: #bb4200;
+  background-color: #bb4200;
 }
 
-
-
-/*MI RUTINA*/
-
-.imagenFondorutina{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mano-enfoque-selectivo-joven-mujer-sexy-ropa-deportiva-reloj-inteligente-pie-cinta-hacer-ejercicio-gimnasio-moderno-espacio-copia_1150-46967.jpg?t=st=1738774604~exp=1738778204~hmac=b9dab9f350956efeb780095a9499e9da1ff4d050a3ca592363d32a18d28f9769&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.imagenFondotienda {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?t=st=1738802392~exp=1738805992~hmac=61ac5fcb96bbc7491612e6e0c2de170e803f83bfb1c3f23ad42e71597fb34d4d&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.fueraAcordeon{
-    margin: 20px;
-    margin-top: 40px;
+/* Flechas de navegación en negro */
+.carousel-control-prev, .carousel-control-next {
+  width: 60px;
 }
 
-
-/*TITULO PRINCIPAL*/
-
-.TituloRutinas{
-color: #121212;
-text-align: center;
-font-size: 30px;
-margin-top: 60px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  width: 50px;
+  height: 50px;
 }
-
-
-/*ACORDEON*/
-
-.acordeon label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    background: #ff681c;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    width: 100%; 
-    position: relative;
-}
-
-.acordeon label::after {
-    content: ""; 
-    transition: transform 0.3s ease;
-}
-
-.flechaRutina {
-    width: 16px; 
-    height: 16px;
-    margin-left: auto; 
-    margin-right: 20px;
-}
-
-.contenido {
-    max-height: 0;
-    overflow: hidden;
-    background: #ffffff;
-    padding: 0 10px;
-    margin-bottom: 15px;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-}
-
-.separator {
-    display: inline-block;
-    padding-left: 10px; 
-    padding-right: 10px; 
-    border-left: 2px solid #000; 
-    margin-left: 10px; 
-    font-size: 14px; 
-  }
-
-.separarSeries{
-    margin-right: 80px;
-}
-
-.box {
-    display: block; 
-    padding: 20px; 
-    border: 2px solid #eeeeee; 
-    margin: 1px 0;
-    width: 100%; 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.171);
-    border-radius: 5px; 
-    color: #000000ea;
-}
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="checkbox"]:checked + .contenido {
-    max-height: 200px;
-    padding: 10px;
-}
-
-
-/*BOTON AÑADIR RUTINA*/
-
-.botonRutina{
-    font-size: 18px;
-    display: inline-block;
-    justify-content: center;
-    padding: 12px 24px;
-    background-color: #ff6c31; 
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-    margin-bottom: 100px;
-}
-
-.botonRutina:hover {
-    background-color: #bb4200;
-}
-
-/*Tienda*/
-
-.imagenFondotienda{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?t=st=1738802392~exp=1738805992~hmac=61ac5fcb96bbc7491612e6e0c2de170e803f83bfb1c3f23ad42e71597fb34d4d&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/*TITULO Y SUBTITULO TIENDA*/
-
-.tituloTienda{
-    color: #121212;
-text-align: center;
-font-size: 30px;
-margin-top: 60px;
-}
-
-.subtituloTienda{
-    color: #121212;
-text-align: center;
-font-size: 22px;
-margin-top: 5px;
-font-weight: normal;
-text-transform: uppercase;
-}
-
-
 
 /*CARDS PRODCUTOS INDIVIDUALES*/
-
 .contenedorTienda-principal {
-    position: relative;
-    width: 90%;
-    overflow: visible;
-    align-items: center;
-    justify-content: center; 
-    align-items: center; 
-    margin: 0 auto;
+  position: relative;
+  width: 90%;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .contenedorTienda {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    margin: 60px;
-    margin-left: 40px;
-    align-items: center;
-    margin-right: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 60px;
+  margin-left: 40px;
+  align-items: center;
+  margin-right: 30px;
 }
 
 .recuadroTienda {
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    cursor: pointer;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .recuadroTienda img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  display: block;
 }
 
 .recuadroTienda:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .descripcionProductos {
-    font-size: 13px;
-    margin: 18px 0;
-    color: #000;
-    text-align: center;
-    margin-top: 20px;
-    text-transform: uppercase;
+  font-size: 13px;
+  margin: 18px 0;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .precioProductos {
-    font-size: 17px;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
 }
 
 .flecha {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
 .flecha img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-.flecha-izquierda{
-    left: -40px;
+.flecha-izquierda {
+  left: -40px;
 }
 
 .flecha-derecha {
-    right: -50px;
+  right: -50px;
 }
 
-
-
-
 /*CARDS PRODUCTOS GENERALES*/
-
 .contenedor-cardsTienda {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 60px;
-    margin-bottom: 150px;
-    padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 150px;
+  padding: 0px 40px;
 }
 
 .cardTienda {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .cardTienda:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .cardTienda img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-texto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar la legibilidad */
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar la legibilidad */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
 }
 
-/*Sumate al Staff*/
-
-.imagenFondoStaff{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/jovenes-deportistas-entrenando-gimnasio-matutino_1157-28953.jpg?t=st=1738809923~exp=1738813523~hmac=61b240140c4100a670b9b26824c3f4dc034ea2ffc58454b9f1eaa1f5e702c38f&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.imagenFondorutina {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mano-enfoque-selectivo-joven-mujer-sexy-ropa-deportiva-reloj-inteligente-pie-cinta-hacer-ejercicio-gimnasio-moderno-espacio-copia_1150-46967.jpg?t=st=1738774604~exp=1738778204~hmac=b9dab9f350956efeb780095a9499e9da1ff4d050a3ca592363d32a18d28f9769&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-/*AGREGAR UN ARCHIVO*/
-
-.archivo-input {
-    display: inline-block;
-    background-color: #ffb349;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    border: 2px solid #ff9a0e;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.fueraAcordeon {
+  margin: 20px;
+  margin-top: 40px;
 }
 
-.archivo-input:hover {
-    background-color: #ea8800;
-    border-color: #d77e01;
+/*ACORDEON*/
+.acordeon label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff681c;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  position: relative;
 }
 
-/*VISTA CELULAR*/
+.acordeon label::after {
+  content: "";
+  transition: transform 0.3s ease;
+}
+
+.flechaRutina {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.contenido {
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.separator {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 2px solid #000;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.separarSeries {
+  margin-right: 80px;
+}
+
+.box {
+  display: block;
+  padding: 20px;
+  border: 2px solid #eeeeee;
+  margin: 1px 0;
+  width: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.171);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.9176470588);
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .contenido {
+  max-height: 200px;
+  padding: 10px;
+}
+
+/*BOTON AÑADIR RUTINA*/
+.botonRutina {
+  font-size: 18px;
+  display: inline-block;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #ff6c31;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  margin-bottom: 100px;
+}
+
+.botonRutina:hover {
+  background-color: #bb4200;
+}
+
+/*INICIO*/
+.imagenFondo {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*TIENDA*/
+.imagenFondotienda {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?t=st=1738802392~exp=1738805992~hmac=61ac5fcb96bbc7491612e6e0c2de170e803f83bfb1c3f23ad42e71597fb34d4d&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*MI RUTINA*/
+.imagenFondorutina {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mano-enfoque-selectivo-joven-mujer-sexy-ropa-deportiva-reloj-inteligente-pie-cinta-hacer-ejercicio-gimnasio-moderno-espacio-copia_1150-46967.jpg?t=st=1738774604~exp=1738778204~hmac=b9dab9f350956efeb780095a9499e9da1ff4d050a3ca592363d32a18d28f9769&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*CONTACTO*/
+.imagenFondocontacto {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*INCRIBIRSE*/
+.imagenFondoinscribirse {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (max-width: 350px) {
-    li {
-        padding: 5px;
-        text-align: center;
-        font-size: 15px;
-        border-radius: 5px;
-        border-bottom: 2px solid #ffffff;
-    }
-
-    .dentrodelFooter {
-        margin-bottom: 20px;
-        gap: 10px;
-        margin-right: 40px;
-
-    }
-
-    .botonInscribirse{
-        margin-bottom: 60px;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
-    .videos{
-        margin: 10px;               
-        border-radius: 15px;
-    }
-    
-    .flechasborrar{
-        display: none
-    }
-
-    .textoInicio{
-        font-size: 14px;
-    }
-
-    .primerSubtitulo{
-        font-size: 28px;
-    }
-
-    iframe{
-        width: 198px;
-    }
-
-    .muestrarioVideos{
-        gap: 500px;
-    }
-
-    .tituloContacto{
-        padding: 20px;
-        padding-top: 220px;
-        margin-top: 40px;
-        font-size: 30px;
-    }
-    
-    .contactanosTitulo{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .rellenarTexto:nth-child(1), .rellenarTexto:nth-child(2) {
-        width: 100%;                  
-    }
-    
-    .rellenarTexto:nth-child(3), .rellenarTexto:nth-child(4) {
-        width: 100%;                  
-    }
-    
-    .rellenarTexto:nth-child(5) {
-        width: 100%;                 
-    }
-
-    .infoContacto{
-        font-size: 16px;
-    }
-
-    input[type="submit"] {
-        padding: 15px 10px;            
-        font-size: 18px;                
-        border-radius: 10px;
-        width: 120px;                  
-        display: block;                           
-    }
-
-    h3{
-        margin-bottom: 10px;
-        padding-left: 20px;
-    }
-    
-    p{
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 2px;
-        margin-bottom: 0;
-    }
-  
-    .carousel-container {
-        background-color: #ff4800; 
-        padding: 20px;
-        border-radius: 30px;
-        margin: 15px;
-    }
-
+  li {
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    border-bottom: 2px solid #ffffff;
+  }
+  .dentrodelFooter {
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-right: 40px;
+  }
+  .botonInscribirse {
+    margin-bottom: 60px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .videos {
+    margin: 10px;
+    border-radius: 15px;
+  }
+  .flechasborrar {
+    display: none;
+  }
+  .textoInicio {
+    font-size: 14px;
+  }
+  .primerSubtitulo {
+    font-size: 28px;
+  }
+  iframe {
+    width: 198px;
+  }
+  .muestrarioVideos {
+    gap: 500px;
+  }
+  .tituloContacto {
+    padding: 20px;
+    padding-top: 220px;
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .contactanosTitulo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .rellenarTexto:nth-child(1), .rellenarTexto:nth-child(2) {
+    width: 100%;
+  }
+  .rellenarTexto:nth-child(3), .rellenarTexto:nth-child(4) {
+    width: 100%;
+  }
+  .rellenarTexto:nth-child(5) {
+    width: 100%;
+  }
+  .infoContacto {
+    font-size: 16px;
+  }
+  input[type=submit] {
+    padding: 15px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 120px;
+    display: block;
+  }
+  h3 {
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+  }
+  .carousel-container {
+    background-color: #ff4800;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 50px;
+  }
+  .planes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px;
+  }
+  .plan {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .plan h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .beneficio {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  .precioPlan {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .carousel-control-prev {
+    left: -80px;
+  }
+  .carousel-control-next {
+    right: -80px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #eeeeee;
+  font-family: "Montserrat", serif;
+}
 
+.principioPagina {
+  background-color: #000000;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

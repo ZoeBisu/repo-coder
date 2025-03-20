@@ -1,0 +1,53 @@
+$primary-color: #ff3f14;
+
+@mixin padding($padding){
+    padding: $padding;
+}
+
+@mixin gap($gap){
+    gap: $gap;
+}
+
+/*menu*/
+
+.menu a:hover {
+    color: $primary-color;
+}
+
+.menuPresionado{
+    color: $primary-color;
+}
+
+
+.navbar-toggler{
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    @include padding(5px);
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+    border-bottom: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    @include gap(5px);
+}
+
+
+.menu li {
+    margin-left: 4px; 
+}
+
+
+.menuPresionado{
+    font-weight: bold;
+    padding-bottom: 12px !important;
+    padding-top: 12px !important;
+}

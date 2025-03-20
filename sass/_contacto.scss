@@ -1,0 +1,138 @@
+$primary-color: #fb6f2de7;
+
+@mixin padding($padding){
+    padding: $padding;
+}
+
+@mixin font-size($font){
+    font-size: $font;
+}
+
+@mixin width($width){
+    width: $width;
+}
+
+@mixin margin($margin){
+    margin: $margin;
+}
+
+@mixin border-radius($radius: 30px) {
+    border-radius: $radius;
+}
+
+/*Página contacto*/
+
+.tituloContacto{
+    @include padding(20px);
+    padding-top: 300px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    @include font-size(40px);
+    text-transform:none;
+    font-weight: bold;
+}
+
+.imagenFondocontacto{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
+    position: relative;
+    @include width(100%);
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Contenedor*/
+
+.contenedorContactoprimero{
+ background-color: $primary-color;
+ @include padding(20px);
+ @include border-radius;
+ @include margin(30px);
+ margin-bottom: 100px;
+ margin-top: 100px;
+}
+
+.contenedorContacto{
+    background-color: #ffffff;
+    @include padding(10px);
+    @include border-radius;
+}
+
+/*Interior contenedor*/
+
+.contactanosTitulo{
+    color: #121212;
+    @include font-size(35px);
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;             
+    gap: 20px;         
+    margin-top: 30px;           
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.rellenarTexto {
+    display: flex;
+    flex-direction: column;     
+    @include width(100%);
+
+}
+
+label {
+    @include font-size(16px);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, textarea {
+    @include padding(10px);
+    border: 1px solid #ccc;
+    @include border-radius(5px);
+    @include font-size(14px);
+}
+
+.rellenarTexto:nth-child(1), .rellenarTexto:nth-child(2) {
+    @include width(48px);                  
+}
+
+.rellenarTexto:nth-child(3), .rellenarTexto:nth-child(4) {
+    @include width(48%);                  
+}
+
+.rellenarTexto:nth-child(5) {
+    @include width(100%);                 
+}
+
+/*Boton Contacto*/
+
+input[type="submit"] {
+    @include padding(15px 30px);            
+    @include font-size(18px);                
+    background-color: $primary-color;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;     
+    margin-bottom: 20px;        
+    width: 200px;                  
+    display: block;                
+    margin-left: auto;             
+    margin-right: auto;             
+}
+
+input[type="submit"]:hover {
+    background-color: #f16727;   
+}

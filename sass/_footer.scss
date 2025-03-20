@@ -1,0 +1,64 @@
+$primary-color: #121212;
+
+@mixin gap($gap){
+    gap: $gap;
+}
+
+@mixin padding-left {
+    padding-left: 20px;
+}
+
+/*FOOTER DE TODAS LAS PAG*/
+
+footer{
+    background-color: $primary-color;
+    padding-bottom: 30px;
+}
+
+.dentrodelFooter{
+    display: flex;                   
+    margin-bottom: 20px;  
+    @include gap(90px);
+}
+
+
+.tituloFooter{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px !important;
+}
+
+.titulosGrupos{
+    font-size: 19px !important;
+    font-weight: bold;
+}
+
+.textoFooter {
+    margin-bottom: 2px !important; /* Fuerza un margen inferior más pequeño */
+    line-height: 1.1 !important; /* Reduce el espacio entre líneas */
+}
+
+.redes{
+    text-align: center;
+}
+
+.siguenosEnredes{
+    margin-bottom: 10px;
+}
+
+.imagenesRedes{
+    display: flex;
+    @include gap(20px);
+    justify-content: center;
+}
+
+h3{
+    margin-bottom: 10px;
+    @include padding-left;
+}
+
+p{
+    @include padding-left;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}

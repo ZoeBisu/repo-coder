@@ -1,0 +1,33 @@
+@import 'inicio';
+@import 'contacto';
+@import 'tipografias';
+@import 'menu';
+@import 'footer';
+@import 'inscribirse';
+@import 'tienda';
+@import 'miRutina';
+@import 'imagenesInicio';
+@import 'sumate';
+@import 'vistaCelular';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #eeeeee;
+    font-family: "Montserrat", serif;
+}
+
+.principioPagina{
+    background-color: #000000;
+}
+
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
