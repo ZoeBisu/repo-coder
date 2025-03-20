@@ -1,14 +1,20 @@
 
-/*INICIO*/
 
-.imagenFondo{
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
+.imagenesParaFondos{
     position: relative;
-    @include width(100%);
+    width: 100%;
     min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/*INICIO*/
+
+.imagenFondo{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/vista-angulo-hombre-musculoso-irreconocible-preparandose-levantar-barra-club-salud_637285-2497.jpg?t=st=1738623924~exp=1738627524~hmac=a3c3b83b79b0c77335013eaf9fe19bca9f962d695a5167e38250ff6379309596&w=740");
+    @extend .imagenesParaFondos;
 }
 
 
@@ -16,12 +22,7 @@
 
 .imagenFondotienda{
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?t=st=1738802392~exp=1738805992~hmac=61ac5fcb96bbc7491612e6e0c2de170e803f83bfb1c3f23ad42e71597fb34d4d&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .imagenesParaFondos;
 }
 
 
@@ -29,12 +30,7 @@
 
 .imagenFondorutina{
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mano-enfoque-selectivo-joven-mujer-sexy-ropa-deportiva-reloj-inteligente-pie-cinta-hacer-ejercicio-gimnasio-moderno-espacio-copia_1150-46967.jpg?t=st=1738774604~exp=1738778204~hmac=b9dab9f350956efeb780095a9499e9da1ff4d050a3ca592363d32a18d28f9769&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .imagenesParaFondos;
 }
 
 
@@ -42,12 +38,7 @@
 
 .imagenFondocontacto{
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/mujeres-que-usan-computadora-portatil-sofa-juntos_53876-146411.jpg?t=st=1738709499~exp=1738713099~hmac=cd7e058ce1a9698196d4c21cf1107182ddff124aec427f488b5122f11f985c12&w=826");
-    position: relative;
-    @include width(100%);
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .imagenesParaFondos;
 }
 
 
@@ -55,10 +46,13 @@
 
 .imagenFondoinscribirse{
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/brazo-entrenamiento-culturista-banda-resistencia_7502-4758.jpg?t=st=1738713955~exp=1738717555~hmac=b7c34f9c43642bb25afe687e03892cebd43c7be964f09e8ebfa09214cb283b3f&w=740");
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .imagenesParaFondos;
+}
+
+
+/*SUMATE AL STAFF*/
+
+.imagenFondoStaff{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("https://img.freepik.com/foto-gratis/jovenes-deportistas-entrenando-gimnasio-matutino_1157-28953.jpg?t=st=1738809923~exp=1738813523~hmac=61b240140c4100a670b9b26824c3f4dc034ea2ffc58454b9f1eaa1f5e702c38f&w=740");
+    @extend .imagenesParaFondos;
 }
