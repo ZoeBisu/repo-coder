@@ -16,50 +16,45 @@
 
 /*tabla planes*/
 
-.planes {
-    font-weight: normal;
-}
-
-.table-container {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 1fr);
+    gap: 10px;
     width: 100%;
-    overflow-x: auto; /* Habilita scroll horizontal */
-    -webkit-overflow-scrolling: touch; 
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    color: #121212;
-    margin: 0 auto;
-    white-space: nowrap;
-}
-
-thead {
-    font-size: 20px;
-}
-
-th, td {
-    padding: 8px;
+    max-width: 800px;
+    margin: auto;
     text-align: center;
+}
+.grid-header, .grid-item {
+    padding: 10px;
     border: 1px solid #ddd;
 }
-
+.grid-header {
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
 .columnasIzquierda {
     text-align: left;
+    font-weight: bold;
 }
-
-.filaFidelidad {
-    font-size: 13px;
-    color: #000000af;
-    border: none;
-}
-
 .precioPlan {
-    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.filaFidelidad {
+    color: #666;
+    font-size: 14px;
 }
 
+.grid-header {
+    font-weight: bold;
+    background-color: #f8f8f8;
+    color: #121212; /* Asegura un buen contraste */
+}
 
-
+.grid-item, .columnasIzquierda {
+    color: #333; /* Un tono más oscuro para mejor visibilidad */
+}
 /*BOTON INSCRIBIRSE AHORA*/
 
 .botonInscribirseahora{

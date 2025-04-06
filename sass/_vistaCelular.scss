@@ -1,7 +1,7 @@
 
 
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
     li {
         padding: 5px;
         text-align: center;
@@ -239,4 +239,28 @@ td img {
     max-width: 25px; 
     height: auto;
 }
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-header {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.grid-item, .columnasIzquierda, .precioPlan, .filaFidelidad {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-item img {
+    width: 30px;
+    height: 30px;
+}
+
 }

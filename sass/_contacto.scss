@@ -93,17 +93,6 @@ input, textarea {
     @include font-size(14px);
 }
 
-.rellenarTexto:nth-child(1), .rellenarTexto:nth-child(2) {
-    @include width(48px);                  
-}
-
-.rellenarTexto:nth-child(3), .rellenarTexto:nth-child(4) {
-    @include width(48%);                  
-}
-
-.rellenarTexto:nth-child(5) {
-    @include width(100%);                 
-}
 
 /*Boton Contacto*/
 
